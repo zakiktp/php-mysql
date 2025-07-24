@@ -1,3 +1,24 @@
+# ✅ Deployment Checklist
+
+## 🧪 Pre-Deployment
+- [ ] Code committed and pushed to `main`
+- [ ] All environment variables configured in `.env`
+- [ ] `.gitignore` updated to exclude sensitive files
+- [ ] Database is backed up
+- [ ] Application tested locally
+
+## 🚀 Deployment Steps
+- [ ] Pull latest from GitHub
+- [ ] Configure Apache/NGINX
+- [ ] Set file permissions
+- [ ] Start/restart XAMPP services
+- [ ] Open browser to verify functionality
+
+## 🔁 Post-Deployment
+- [ ] Test critical forms (Appointment, OPD, etc.)
+- [ ] Confirm email confirmation works
+- [ ] Check logs for errors
+- [ ] Push tag for new version
 \# 📜 Changelog — PHP-MySQL Appointment System
 
 
