@@ -1,27 +1,16 @@
-# Ignore environment files
-.env
-
-# Ignore system files
+# Ignore system & environment files
 .DS_Store
+*.log
+.env
+*.bak
+*.tmp
+
+# Ignore OS files
 Thumbs.db
+desktop.ini
 
-# Ignore IDE settings
-.vscode/
-.idea/
-
-# Ignore XAMPP-specific folders
-/tmp/
-/logs/
+# Ignore vendor files (if later using Composer)
 vendor/
 
-# Ignore OS-generated files
-*.log
-*.bak
-
-# Ignore compiled files
-*.pyc
-__pycache__/
-
-# Ignore database backups
-*.sql
-*.sqlite
+# Ignore compiled or cache folders
+cache/
