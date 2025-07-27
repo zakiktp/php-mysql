@@ -1,96 +1,42 @@
 <?php
 session_start();
-require 'db_connection.php';
 
-$error = $_SESSION['login_error'] ?? '';
-unset($_SESSION['login_error']); // Clear error
+// If already logged in, redirect to dashboard
+if (isset($_SESSION['user_id'])) {
+    header("Location: dashboard.php");
+    exit;
+}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Staff Login</title>
-    <style>
-        body {
-            background-color: #eef2f7;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            width: 400px;
-            margin: 80px auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px #ccc;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .btn {
-            background-color: #2a9df4;
-            color: white;
-            padding: 10px;
-            border: none;
-            width: 100%;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #1d80d0;
-        }
-        .error {
-            color: red;
-            background-color: #ffe5e5;
-            padding: 8px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-        .toggle-pass {
-            position: relative;
-        }
-        .toggle-icon {
-            position: absolute;
-            right: 15px;
-            top: 45%;
-            cursor: pointer;
-        }
-    </style>
+    <title>Login - Hospital Management</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-<div class="container">
-    <h2>🔐 Staff Login</h2>
-
-    <?php if ($error): ?>
-        <div class="error"><?= htmlspecialchars($error); ?></div>
-    <?php endif; ?>
-
-    <form method="post" action="login_process.php">
-        <label><strong>Login ID:</strong></label>
-        <input type="text" name="login_id" required>
-
-        <label><strong>Password:</strong></label>
-        <div class="toggle-pass">
-            <input type="password" name="password" id="password" required>
-            <span class="toggle-icon" onclick="togglePassword()">👁️</span>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<body class="bg-light">
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4 bg-white p-4 rounded shadow">
+            <h4 class="mb-3 text-center">Login</h4>
+            <?php if (isset($_GET['error'])): ?>
+                <div class="alert alert-danger"><?= htmlspecialchars($_GET['error']) ?></div>
+            <?php endif; ?>
+            <form action="auth/auth.php" method="POST">
+                <div class="form-group mb-3">
+                    <label>Username or Email</label>
+                    <input type="text" name="username" class="form-control" required autofocus>
+                </div>
+                <div class="form-group mb-3">
+                    <label>Password</label>
+                    <input type="password" name="password" class="form-control" required>
+                </div>
+                <button class="btn btn-primary w-100" type="submit">Login</button>
+            </form>
         </div>
-        <button type="submit" class="btn">Login</button>
-        <div style="text-align: right; margin-top: 10px;">
-            <a href="forgot_password.php" style="color: #007bff; text-decoration: none;">Forgot Password?</a>
-        </div>
-    </form>
-
+    </div>
 </div>
-
-<script>
-function togglePassword() {
-    const passInput = document.getElementById("password");
-    passInput.type = passInput.type === "password" ? "text" : "password";
-}
-</script>
 </body>
 </html>
-
-

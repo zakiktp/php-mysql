@@ -1,16 +1,74 @@
-# Ignore system & environment files
+# System / Environment
 .DS_Store
-*.log
-.env
-*.bak
-*.tmp
-
-# Ignore OS files
 Thumbs.db
 desktop.ini
+*.log
+*.bak
+*.tmp
+*.swp
 
-# Ignore vendor files (if later using Composer)
+# Sensitive config files
+.env
+.env.local
+.env.development
+.env.production
+
+# PHPStorm / VSCode / IDEs
+.idea/
+.vscode/
+
+# Node / npm (if used for frontend)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Composer
 vendor/
 
-# Ignore compiled or cache folders
+# Cache / Session / Temp
 cache/
+tmp/
+storage/
+sessions/
+*.cache
+
+# XAMPP Specific
+xampp/
+
+# Database backups (optional)
+*.sql
+*.sqlite
+*.db
+
+# OS or file manager metadata
+ehthumbs.db
+Icon?
+
+# Backup or autosave files
+*.~*
+*.orig
+*.old
+*.save
+*.sublime-workspace
+
+# Deployment / Upload folders
+uploads/
+backup/
+backup_drive/
+google_drive/
+
+# Git-related
+.gitignore
+*.gitkeep
+*.gitattributes
+
+# Others (Customize if needed)
+credentials/
+credentials.json
+config.php # if it has sensitive info
+
+# Ignore IDE build/output folders (optional)
+build/
+dist/
+out/
+

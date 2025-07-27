@@ -1,0 +1,123 @@
+/* css/dashboard.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f7fb;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #005b96;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.module-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+
+.dot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 5px);
+  grid-gap: 4px;
+  margin-top: 3px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  min-width: 240px;
+  z-index: 999;
+}
+
+.dropdown-content.show {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.dropdown-content a {
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+  background: #005b96;
+  color: white;
+}
+
+.user-info {
+  font-size: 14px;
+}
+
+.dashboard-content {
+  padding: 20px;
+  background: white;
+  min-height: calc(100vh - 60px);
+}
+.footer {
+  background-color: #212529;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+  .footer .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer small {
+    font-size: 13px;
+    display: block;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,171 @@
+Folder PATH listing for volume Windows-SSD
+Volume serial number is 9C0A-FC20
+C:.
+¦   .gitignore
+¦   CHANGELOG.md
+¦   create_users.php
+¦   dashboard.php
+¦   db_test.php
+¦   folder-structure.txt
+¦   forgot_password.php
+¦   forgot_password_process.php
+¦   login.php
+¦   login_process.php
+¦   README.md
+¦   set_module.php
+¦   sync_user_staff.php
+¦   test_db_connection.php
+¦   update_db_connection_paths.php
+¦   validate_input.php
+¦   
++---api
++---appointment
+¦       appointment.php
+¦       delete_appointment.php
+¦       delete_patient.php
+¦       edit_appointment.php
+¦       edit_patient.php
+¦       follow_up.php
+¦       get_cities.php
+¦       list.php
+¦       new.php
+¦       patient_list.php
+¦       save_address.php
+¦       save_appointment.php
+¦       save_city.php
+¦       search_patient.php
+¦       search_patient_ajax.php
+¦       send_appointment_email.php
+¦       update_appointment.php
+¦       view_appointment.php
+¦       
++---assets
+¦   +---css
+¦   ¦       dashboard.css
+¦   ¦       
+¦   +---fonts
+¦   +---html
+¦   ¦       module_launcher.html
+¦   ¦       
+¦   +---icons
+¦   +---images
+¦   ¦       logo_clinic.png
+¦   ¦       
+¦   +---js
+¦   +---uploads
++---auth
+¦       auth.php
+¦       logout.php
+¦       session_protect.php
+¦       
++---docs
+¦       branching_strategy.md
+¦       deployment_checklist.md
+¦       version_plan.md
+¦       version_roadmap.md
+¦       
++---doctors
++---financials
++---frontdesk
++---includes
+¦       db.php
+¦       db_connection.php
+¦       db_connection_live.php
+¦       db_connection_local.php
+¦       footer.php
+¦       header.php
+¦       
++---ipd
++---lab
++---opd
++---pharmacy
++---PHPMailer
+¦   ¦   COMMITMENT
+¦   ¦   composer.json
+¦   ¦   get_oauth_token.php
+¦   ¦   LICENSE
+¦   ¦   README.md
+¦   ¦   SECURITY.md
+¦   ¦   SMTPUTF8.md
+¦   ¦   VERSION
+¦   ¦   
+¦   +---language
+¦   ¦       phpmailer.lang-af.php
+¦   ¦       phpmailer.lang-ar.php
+¦   ¦       phpmailer.lang-as.php
+¦   ¦       phpmailer.lang-az.php
+¦   ¦       phpmailer.lang-ba.php
+¦   ¦       phpmailer.lang-be.php
+¦   ¦       phpmailer.lang-bg.php
+¦   ¦       phpmailer.lang-bn.php
+¦   ¦       phpmailer.lang-ca.php
+¦   ¦       phpmailer.lang-cs.php
+¦   ¦       phpmailer.lang-da.php
+¦   ¦       phpmailer.lang-de.php
+¦   ¦       phpmailer.lang-el.php
+¦   ¦       phpmailer.lang-eo.php
+¦   ¦       phpmailer.lang-es.php
+¦   ¦       phpmailer.lang-et.php
+¦   ¦       phpmailer.lang-fa.php
+¦   ¦       phpmailer.lang-fi.php
+¦   ¦       phpmailer.lang-fo.php
+¦   ¦       phpmailer.lang-fr.php
+¦   ¦       phpmailer.lang-gl.php
+¦   ¦       phpmailer.lang-he.php
+¦   ¦       phpmailer.lang-hi.php
+¦   ¦       phpmailer.lang-hr.php
+¦   ¦       phpmailer.lang-hu.php
+¦   ¦       phpmailer.lang-hy.php
+¦   ¦       phpmailer.lang-id.php
+¦   ¦       phpmailer.lang-it.php
+¦   ¦       phpmailer.lang-ja.php
+¦   ¦       phpmailer.lang-ka.php
+¦   ¦       phpmailer.lang-ko.php
+¦   ¦       phpmailer.lang-ku.php
+¦   ¦       phpmailer.lang-lt.php
+¦   ¦       phpmailer.lang-lv.php
+¦   ¦       phpmailer.lang-mg.php
+¦   ¦       phpmailer.lang-mn.php
+¦   ¦       phpmailer.lang-ms.php
+¦   ¦       phpmailer.lang-nb.php
+¦   ¦       phpmailer.lang-nl.php
+¦   ¦       phpmailer.lang-pl.php
+¦   ¦       phpmailer.lang-pt.php
+¦   ¦       phpmailer.lang-pt_br.php
+¦   ¦       phpmailer.lang-ro.php
+¦   ¦       phpmailer.lang-ru.php
+¦   ¦       phpmailer.lang-si.php
+¦   ¦       phpmailer.lang-sk.php
+¦   ¦       phpmailer.lang-sl.php
+¦   ¦       phpmailer.lang-sr.php
+¦   ¦       phpmailer.lang-sr_latn.php
+¦   ¦       phpmailer.lang-sv.php
+¦   ¦       phpmailer.lang-tl.php
+¦   ¦       phpmailer.lang-tr.php
+¦   ¦       phpmailer.lang-uk.php
+¦   ¦       phpmailer.lang-ur.php
+¦   ¦       phpmailer.lang-vi.php
+¦   ¦       phpmailer.lang-zh.php
+¦   ¦       phpmailer.lang-zh_cn.php
+¦   ¦       
+¦   +---src
+¦           DSNConfigurator.php
+¦           Exception.php
+¦           OAuth.php
+¦           OAuthTokenProvider.php
+¦           PHPMailer.php
+¦           POP3.php
+¦           SMTP.php
+¦           
++---procedures
++---project
+¦       project_master_index.php
+¦       
++---staff
+¦       delete_staff.php
+¦       edit_staff.php
+¦       register_staff.php
+¦       staff_list.php
+¦       
++---templates
++---tests
