@@ -1,0 +1,65 @@
+Hospital Management System
+Hospital Management System - Project Structure & Changelog
+===========================================================
+
+📁 Folder Structure
+-------------------
+
+/hospital_php
+├── appointment/
+│   ├── appointment.php
+│   ├── new_appointment.php
+│   ├── patient.php
+│   └── ...
+├── opd/
+│   ├── opd.php
+│   └── ...
+├── pharmacy/
+│   └── ...
+├── staff/
+│   ├── staff_list.php
+│   ├── edit_staff.php
+│   ├── register_staff.php
+│   └── ...
+├── ipd/
+│   └── ...
+├── lab/
+│   └── ...
+├── includes/
+│   ├── db_connection.php
+│   ├── header.php
+│   ├── footer.php
+│   └── ...
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── auth/
+│   ├── login.php
+│   ├── logout.php
+│   └── login_process.php
+├── dashboard.php
+├── set_module.php
+├── create_users.php
+├── .env
+├── .gitignore
+├── README.md
+
+📄 Changelog
+------------
+
+✅ v1.0.0 - Initial Setup
+- Created basic folder structure
+- Added appointment, staff, and OPD modules
+- Set up database connection
+
+✅ v1.0.1 - Staff Module Integration
+- Created staff list, register, edit features
+- Synced with user creation
+- Pushed to GitHub repo: zakiktp/php-mysql
+
+✅ v1.0.2 - UI Restructure & Deployment Prep
+- Implemented modular layout with includes/
+- Prepared for Hostinger deployment
+- Added `.gitignore`, `.env`, and `README.md`
+
